@@ -1,10 +1,101 @@
+:root {
+    --orange: #D1512D;
+    --purple: #411530;
+    --lightcolour: #F5C7A9;
+    --offwhite: #D9D9D9;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 #header {
-    display: flex;
+    background-color: var(--orange);
+    display: grid;
     align-items: center;
-    justify-content: space-between;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 4rem;
+}
+
+#buttondiv {
+    display: flex;
+    justify-content: end;
+    gap: 50px;
 }
 
 #mainTitle {
+    margin: 0;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+}
+
+#content {
+    height: calc(100% - 65px);
+}
+
+#maingrid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#leftfloatie {
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 2;
+    background-color: var(--purple);
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    border-radius: 56px;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+#servicesgrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceGridElement {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#middlefloatie {
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 2;
+    grid-column: 2;
+    background-color: var(--purple);
+    padding: 4rem;
+    border-radius: 56px;
+}
+
+#rightfloatie {
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 2;
+    grid-column: 3;
+    background-color: var(--purple);
+    padding: 4rem;
+    border-radius: 56px;
 }
