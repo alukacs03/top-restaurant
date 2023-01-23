@@ -3,6 +3,7 @@
     --purple: #411530;
     --lightcolour: #F5C7A9;
     --offwhite: #D9D9D9;
+    --buttoncolour: #F5C7A9;
 }
 
 html,
@@ -11,6 +12,14 @@ body {
     min-height: 100%;
     padding: 0;
     margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--lightcolour);
+    background-image: url(../src/resources/background.svg);
+    background-size: 100% 100%;
+}
+
+.orangetext {
+    color: var(--orange)
 }
 
 #header {
@@ -58,26 +67,52 @@ body {
     background-color: var(--purple);
     padding: 1.5rem 3rem 1.5rem 3rem;
     border-radius: 56px;
+    align-items: center;
 }
 
-h2 {
+#servicesTitle {
     padding: 0;
     margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+#leftFloatieButton {
+    margin-top: 20px;
+    font-size: 32px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 1.2rem;
+    outline: none;
+    border: none;
+    background-color: var(--buttoncolour)
 }
 
 #servicesgrid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
     align-items: center;
+    width: 110%;
+    gap: 10px;
 }
 
 .serviceGridElement {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 69px auto;
     grid-template-rows: 1fr;
-    justify-items: center;
+    justify-items: left;
     align-items: center;
+    background-color: var(--offwhite);
+    padding: 10px;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.serviceGridElement p {
+    color: var(--purple)
 }
 
 #middlefloatie {
@@ -88,6 +123,15 @@ h2 {
     background-color: var(--purple);
     padding: 4rem;
     border-radius: 56px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+ul, li {
+    list-style: none;
+    padding-left: 0;
 }
 
 #rightfloatie {
