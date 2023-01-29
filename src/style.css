@@ -34,6 +34,14 @@ body {
     height: 4rem;
 }
 
+#header button {
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1.4rem;
+    color: white;
+}
+
 #buttondiv {
     display: flex;
     justify-content: end;
@@ -60,7 +68,7 @@ body {
     align-items: center;
 }
 
-#leftfloatie {
+.sidefloatie {
     display: flex;
     flex-direction: column;
     grid-row-start: 2;
@@ -68,17 +76,19 @@ body {
     padding: 1.5rem 3rem 1.5rem 3rem;
     border-radius: 56px;
     align-items: center;
+    width: 200px;
 }
 
-#servicesTitle {
+#servicesTitle, #offersTitle {
     padding: 0;
     margin: 0;
     margin-bottom: 10px;
     text-align: center;
     color: white;
+    font-weight: 300;
 }
 
-#leftFloatieButton {
+.floatiebutton {
     margin-top: 20px;
     font-size: 32px;
     padding-top: 5px;
@@ -91,7 +101,7 @@ body {
     background-color: var(--buttoncolour)
 }
 
-#servicesgrid {
+#servicesgrid, #offersgrid {
     display: grid;
     justify-items: center;
     align-items: center;
@@ -99,19 +109,28 @@ body {
     gap: 10px;
 }
 
-.serviceGridElement {
+.serviceGridElement, .offersGridElement {
     display: grid;
     grid-template-columns: 69px auto;
     grid-template-rows: 1fr;
-    justify-items: left;
+    justify-items: center;
     align-items: center;
     background-color: var(--offwhite);
+    font-size: 1.3rem;
     padding: 10px;
     border-radius: 30px;
     width: 100%;
 }
 
-.serviceGridElement p {
+.offersGridElement {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0;
+}
+
+.serviceGridElement p, .offersGridElement p {
     color: var(--purple)
 }
 
@@ -122,6 +141,8 @@ body {
     grid-column: 2;
     background-color: var(--purple);
     padding: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     border-radius: 56px;
     align-items: center;
     justify-content: center;
@@ -129,9 +150,25 @@ body {
     text-align: center;
 }
 
+#middlefloatie h1 {
+    margin-top: 0;
+    font-weight: 300;
+}
+
+#middlefloatie h2 {
+    margin-bottom: 0;
+    font-weight: 200;
+}
+
 ul, li {
     list-style: none;
     padding-left: 0;
+}
+
+li {
+    margin: 1.4rem;
+    font-size: 1.4rem;
+    font-weight: 200;
 }
 
 #rightfloatie {
@@ -143,3 +180,4 @@ ul, li {
     padding: 4rem;
     border-radius: 56px;
 }
+
