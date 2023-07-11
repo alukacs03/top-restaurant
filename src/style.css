@@ -14,7 +14,6 @@ body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     background-color: var(--lightcolour);
-    background-image: url(../src/resources/background.svg);
     background-size: 100% 100%;
 }
 
@@ -40,6 +39,7 @@ body {
     background: none;
     font-size: 1.4rem;
     color: white;
+    cursor: pointer;
 }
 
 #buttondiv {
@@ -53,6 +53,7 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #content {
