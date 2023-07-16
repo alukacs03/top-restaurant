@@ -16,15 +16,22 @@ const initialLoad = () => {
 //load the page clicked by the user
 const loadNextPage = (nextPageName) => {
     const contentDiv = document.querySelector("#content");
-    console.log(nextPageName, contentDiv);
     contentDiv.innerHTML = "";
     renderNavBar();
+    const navbarButtonsNode = document.querySelectorAll('.navbarbutton');
+    navbarButtonsNode.forEach((element) => {
+        element.classList.remove('currentPageButton');
+    })
     if (nextPageName == 'menu') {
+        navbarButtonsNode[0].classList.add('currentPageButton')
         renderMenu();
     } else if (nextPageName == 'contact') {
+        navbarButtonsNode[2].classList.add('currentPageButton')
         renderContact();
     } else if (nextPageName == 'aboutus') {
+        navbarButtonsNode[1].classList.add('currentPageButton')
         renderAboutUs();
+
     } else {
         renderHomepage();
     }

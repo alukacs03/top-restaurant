@@ -22,16 +22,19 @@ const renderNavBar = () => {
     const menuButton = document.createElement('button');
     menuButton.id="buttonMenu";
     menuButton.textContent = 'Menu';
+    menuButton.classList.add('navbarbutton')
     buttonDiv.appendChild(menuButton);
 
     const aboutUsButton = document.createElement('button');
     aboutUsButton.id="buttonAboutUs";
     aboutUsButton.textContent='About Us';
+    aboutUsButton.classList.add('navbarbutton')
     buttonDiv.appendChild(aboutUsButton);
 
     const contactButton = document.createElement('button');
     contactButton.id='buttonContact';
     contactButton.textContent='Contact';
+    contactButton.classList.add('navbarbutton')
     buttonDiv.appendChild(contactButton);
 
     //add button functionality

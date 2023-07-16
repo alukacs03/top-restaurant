@@ -17,7 +17,8 @@ const renderHomepage = () => {
     
     //add left side floatie content
     const servicesTitle = document.createElement('h2');
-    servicesTitle.id='servicesTitle';
+    servicesTitle.textContent = 'Our Services';
+    servicesTitle.classList.add('sideFloatieTitle');
     leftSideFloatie.appendChild(servicesTitle);
 
     const servicesGrid = document.createElement('div');
@@ -78,7 +79,7 @@ const renderHomepage = () => {
 
     //set up middle floatie
     const middleFloatie = document.createElement('div');
-    middleFloatie.id = "middlefloatie";
+    middleFloatie.classList.add('middlefloatie');
     mainGrid.appendChild(middleFloatie);
     const middleTitle = document.createElement('h1');
     middleTitle.textContent = 'KoffeeCorner is...';
@@ -121,7 +122,7 @@ const renderHomepage = () => {
     rightSideFloatie.classList.add('sidefloatie');
     mainGrid.appendChild(rightSideFloatie);
     const rightSideFloatieTitle = document.createElement('h2');
-    rightSideFloatieTitle.id = 'offersTitle';
+    rightSideFloatieTitle.classList.add('sideFloatieTitle');
     rightSideFloatieTitle.textContent = 'Best Offers';
     rightSideFloatie.appendChild(rightSideFloatieTitle);
 
