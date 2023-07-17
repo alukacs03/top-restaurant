@@ -3,6 +3,7 @@ import renderMenu from "../pages/menu";
 import renderAboutUs from "../pages/aboutus";
 import renderContact from "../pages/contact";
 import renderNavBar from "./renderNavBar";
+import renderFooter from "./renderFooter";
 
 
 // initialize the first loading of the page
@@ -10,6 +11,7 @@ const initialLoad = () => {
     document.body.style.backgroundImage = "url('666ad14339e1b3b886db.svg')";
     renderNavBar();
     renderHomepage();
+    renderFooter();
 };
 
 
@@ -35,6 +37,7 @@ const loadNextPage = (nextPageName) => {
     } else {
         renderHomepage();
     }
+    renderFooter();
 
 };
 

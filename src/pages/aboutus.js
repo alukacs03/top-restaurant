@@ -1,3 +1,8 @@
+import wifiImg from '../resources/wifi.png';
+import chargeImg from '../resources/battery.png';
+import bookImg from '../resources/bookcorner.png';
+
+
 const renderAboutUs = () => {
     //set up basic grid
     const content = document.querySelector('#content');
@@ -29,14 +34,54 @@ const renderAboutUs = () => {
     //set up free wifi card floatie thing
     const wifiCard = document.createElement('div');
     rightFloatie.appendChild(wifiCard);
+    wifiCard.classList.add('aboutUsRightFloatieElement');
+    const wifiTitle = document.createElement('h2');
+    wifiTitle.textContent = "Free WiFi";
+    const wifiImage = document.createElement('img');
+    wifiImage.src = wifiImg;
+    wifiImage.width = '69';
+    wifiImage.height = '69';
+    wifiImage.alt = 'wifi';
+    wifiCard.appendChild(wifiImage);
+    wifiCard.appendChild(wifiTitle);
+    const wifiText = document.createElement('p');
+    wifiText.innerHTML = "Occaecat proident pariatur laborum ea eiusmod sit pariatur aliqua aliqua sunt. Deserunt dolor quis ad reprehenderit laboris pariatur ullamco culpa qui deserunt dolor. Pariatur commodo culpa officia esse. Est in esse proident commodo veniam sint aliquip nisi sunt nostrud mollit.";
+    wifiCard.appendChild(wifiText);
 
     //set up charging floatie thing
     const chargingCard = document.createElement('div');
     rightFloatie.appendChild(chargingCard);
+    chargingCard.classList.add('aboutUsRightFloatieElement');
+    const chargingTitle = document.createElement('h2');
+    chargingTitle.textContent = "Free Charging";
+    const chargeImage = document.createElement('img');
+    chargeImage.src = chargeImg;
+    chargeImage.width = '69';
+    chargeImage.height= '69';
+    chargeImage.alt = 'charge';
+    chargingCard.appendChild(chargeImage);
+    chargingCard.appendChild(chargingTitle);
+    const chargeText = document.createElement('p');
+    chargeText.innerHTML = "Occaecat proident pariatur laborum ea eiusmod sit pariatur aliqua aliqua sunt. Deserunt dolor quis ad reprehenderit laboris pariatur ullamco culpa qui deserunt dolor. Pariatur commodo culpa officia esse. Est in esse proident commodo veniam sint aliquip nisi sunt nostrud mollit.";
+    chargingCard.appendChild(chargeText);
+
 
     //set up bookcorner floatie thing
     const bookCard = document.createElement('div');
     rightFloatie.appendChild(bookCard);
+    bookCard.classList.add('aboutUsRightFloatieElement');
+    const bookTitle = document.createElement('h2');
+    bookTitle.textContent = "BookCorner";
+    const bookImage = document.createElement('img');
+    bookImage.src = bookImg;
+    bookImage.width = '60';
+    bookImage.height= '69';
+    bookImage.alt = 'books';
+    bookCard.appendChild(bookImage);
+    bookCard.appendChild(bookTitle);
+    const bookText = document.createElement('p');
+    bookText.innerHTML = "Occaecat proident pariatur laborum ea eiusmod sit pariatur aliqua aliqua sunt. Deserunt dolor quis ad reprehenderit laboris pariatur ullamco culpa qui deserunt dolor. Pariatur commodo culpa officia esse. Est in esse proident commodo veniam sint aliquip nisi sunt nostrud mollit.";
+    bookCard.appendChild(bookText);
     
 }
 
