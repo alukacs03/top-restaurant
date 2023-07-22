@@ -1,5 +1,3 @@
-import { name } from "file-loader";
-
 const renderContact = () => {
     //basic grid setup
     const content = document.querySelector('#content');
